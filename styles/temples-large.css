@@ -1,0 +1,55 @@
+/* Larger screen view (tablet and desktop) */
+@media (min-width: 768px) {
+    /* Container styling for larger views */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distributes temple cards evenly */
+    }
+
+    /* Temple card layout for larger screens */
+    .temple-card {
+        width: 48%; /* Each card will take up nearly half the screen on tablets */
+        margin-bottom: 2rem; /* Increased margin for spacing */
+    }
+
+    /* Header for larger screens */
+    header {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    /* Navigation bar for larger views */
+    nav {
+        justify-content: flex-start; /* Aligns navigation links to the left */
+        padding-left: 2rem;
+    }
+
+    /* Navigation links styling for larger screens */
+    nav a {
+        padding: 0.75rem 1.5rem; /* Larger padding for a more spacious design */
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Max-width for the container on desktop screens */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto; /* Centers the container on large screens */
+    }
+
+    /* Temple card width for desktop views */
+    .temple-card {
+        width: 30%; /* Each card will take up roughly a third of the screen */
+    }
+
+    /* Adjusting padding and margins for a more professional layout */
+    nav {
+        padding-left: 3rem;
+    }
+
+    header {
+        padding-left: 3rem;
+    }
+}
+
