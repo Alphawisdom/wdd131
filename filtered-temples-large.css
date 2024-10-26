@@ -1,0 +1,57 @@
+/* Larger screen view (tablet and desktop) */
+@media (min-width: 768px) {
+    /* Container styling using CSS Grid for larger views */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+        grid-gap: 2rem; /* Spacing between grid items */
+        max-width: 100%; /* Ensure the container uses full width */
+    }
+
+    /* Temple card layout for larger screens */
+    .temple-card {
+        background-color: #fff;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+        transition: transform 0.3s ease;
+    }
+
+    .temple-card:hover {
+        transform: translateY(-10px); /* Adds a hover effect */
+    }
+
+    /* Header for larger screens */
+    header {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    /* Navigation bar for larger views */
+    nav {
+        justify-content: flex-start; /* Aligns navigation links to the left */
+        padding-left: 2rem;
+    }
+
+    /* Navigation links styling for larger screens */
+    nav a {
+        padding: 0.75rem 1.5rem; /* Larger padding for a more spacious design */
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Max-width for the container on desktop screens */
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout for desktops */
+        max-width: 1200px;
+        margin: 0 auto; /* Centers the container on large screens */
+    }
+
+    /* Adjusting padding and margins for a more professional layout */
+    nav {
+        padding-left: 3rem;
+    }
+
+    header {
+        padding-left: 3rem;
+    }
+}
