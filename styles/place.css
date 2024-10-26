@@ -20,7 +20,8 @@ body {
 @media (max-width: 600px) {
     body {
         font-size: 90%;
-        background-color: #ffffff; /* Adjusted for mobile */
+        background-color: #ffffff;
+        /* Adjusted for mobile */
     }
 }
 
