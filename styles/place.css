@@ -1,53 +1,32 @@
-/* Global Styles */
+/* styles/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
-    --primary-color: #3498db;  /* Example color */
-    --secondary-color: #2ecc71;
-    --font-color: #ffffff;
+    --primary-color: #1a73e8;
+    --font-family: 'Roboto', sans-serif;
 }
 
+/* Global Styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
+    color: var(--primary-color);
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color);
-    color: var(--font-color);
 }
 
-header img {
-    width: 100%;
-    height: auto;
+/* Responsive Media Query */
+@media (max-width: 600px) {
+    body {
+        font-size: 90%;
+    }
 }
 
-/* Weather Section */
-#weather {
-    text-align: center;
-    padding: 20px;
-}
-
-.weather-icon img {
+/* Example of using ::after pseudo-element */
+h1::after {
+    content: '';
+    display: block;
     width: 50px;
-    height: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 8px auto 0;
 }
-
-/* Media Queries for Responsiveness */
-@media (min-width: 600px) {
-    #weather {
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 900px) {
-    .weather-icon::after {
-        content: "⛅";
-        font-size: 2rem;
-    }
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    color: #fff;
-}
-
