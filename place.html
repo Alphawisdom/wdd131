@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Temple Album - Wisdom Ifeanyichukwu Ukpabi.">
+    <meta name="description" content="Explore the beauty of [Place] and its weather information.">
     <meta name="author" content="Wisdom Ifeanyichukwu Ukpabi">
     <title>Explore [Place]</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
 </head>
-
 <body>
     <!-- Hero Section -->
     <header>
+        <h1>Explore the Beautiful [Place]</h1>
         <picture>
             <source media="(min-width: 800px)" srcset="images/hero-large.webp">
             <source media="(min-width: 400px)" srcset="images/hero-medium.webp">
-            <img src="images/beautiful.webp" alt="Beautiful view of [Place]">
+            <img src="images/hero-small.webp" alt="Beautiful view of [Place]">
         </picture>
     </header>
 
     <!-- Main Content -->
     <main>
         <section id="weather">
-            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <h2>Weather <span class="weather-icon"><img src="images/weather-icon.svg" alt="Weather icon"></span></h2>
             <p>Temperature: 10°C</p>
             <p>Wind Speed: 5 km/h</p>
             <p>Wind Chill: <span id="windChill">N/A</span></p>
@@ -36,5 +38,4 @@
         <p>&copy; <span id="year"></span> | Last Updated: <span id="lastModified"></span></p>
     </footer>
 </body>
-
 </html>
